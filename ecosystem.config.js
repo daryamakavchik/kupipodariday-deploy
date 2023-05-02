@@ -11,7 +11,7 @@ module.exports = {
       ref: DEPLOY_REF,
       repo: DEPLOY_REPO,
       path: DEPLOY_PATH,
-      'post-deploy': 'sudo git clone daryamakavchik/web-plus-docker-and-compose.git && docker-compose up -d',
+      'post-deploy': 'docker-compose up -d',
     },
   },
 };
