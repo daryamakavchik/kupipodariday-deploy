@@ -15,4 +15,10 @@ services:
   database:
     image: "postgres:12"
     environment:
-      POSTGRES_PASSWORD: secretpassword 
+      POSTGRES_HOST: localhost
+      POSTGRES_PORT: 5432
+      POSTGRES_PGDATA: '/var/lib/docker/volumes/db-kupipodariday/_data'
+      POSTGRES_USER: student
+      JWT_SECRET: 'some-extra-super-secret-key-that-noone-will-ever-know-about'
+      POSTGRES_DB: 'kupipodariday'
+      POSTGRES_PASSWORD: student
