@@ -1,8 +1,8 @@
 FROM node:16-alpine as build
 
-WORKDIR /var/www/app
+WORKDIR /app
 
-COPY package*.json ./
+COPY package*.json /app/
 
 RUN npm i
 
@@ -13,10 +13,8 @@ RUN npm run build
 
 FROM nginx:1.23.1-alpine
 
-WORKDIR /var/www/app
-
 EXPOSE 8081
 
-COPY --from=build /var/www/app/build /usr/share/nginx/html
+COPY --from=build /app/build/ /usr/share/nginx/html
 
-COPY --from=build /var/www/app/nginx/default.conf  /etc/nginx/conf.d
+COPY --from=build /nginx/default.conf  /etc/nginx/conf.d
