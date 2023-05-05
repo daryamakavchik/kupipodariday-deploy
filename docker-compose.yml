@@ -22,9 +22,10 @@ services:
   database:
     image: postgres:14
     container_name: kupipodariday
-    ports: 5432:5432
+    ports: 
+      - 5432:5432
     volumes: 
-      - db-kupipodariday: /var/lib/docker/volumes/db-kupipodariday/_data
+      - /var/lib/docker/volumes/db-kupipodariday/_data
     environment:
       POSTGRES_HOST: db-kupipodariday
       POSTGRES_PORT: 5432
