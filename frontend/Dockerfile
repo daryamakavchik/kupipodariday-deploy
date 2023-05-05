@@ -17,4 +17,4 @@ EXPOSE 8081
 
 COPY --from=build /app/build/ /usr/share/nginx/html
 
-COPY --from=build /nginx/default.conf  /etc/nginx/conf.d
+COPY --from=build /app/nginx/default.conf  /etc/nginx/conf.d
