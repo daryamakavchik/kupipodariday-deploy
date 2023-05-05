@@ -13,6 +13,8 @@ RUN npm run build
 
 FROM nginx:1.23.1-alpine
 
+WORKDIR /var/www/app
+
 EXPOSE 8081
 
 COPY --from=build /var/www/app/build /usr/share/nginx/html
