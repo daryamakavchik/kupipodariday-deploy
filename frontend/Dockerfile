@@ -15,8 +15,8 @@ FROM nginx:1.23.1-alpine
 
 EXPOSE 8081
 
-WORKDIR /var/www/app/frontend
+WORKDIR /usr/share/nginx/html
 
-COPY --from=build /var/www/app/build /var/www/app/frontend
+COPY --from=build /var/www/app/build .
 
-COPY nginx/default.conf  ../../etc/nginx/conf.d
+COPY ./nginx/default.conf  /etc/nginx/conf.d
