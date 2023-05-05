@@ -5,21 +5,31 @@
 version: "3.9"
 services:
   frontend:
-    image: "daryamakauchyk/kupipodariday-frontend"
+    image: daryamakauchyk/kupipodariday-frontend
     ports:
-      - "3000:8081"
+      - 8081:80
   backend:
-    image: "daryamakauchyk/kupipodariday-backend"
+    image: daryamakauchyk/kupipodariday-backend
     ports:
-      - "3000:4000"
-  database:
-    image: "postgres:12"
+      - 4000:3000
+    links: 
+      - database
+    depends_on:
+      - database
     environment:
-      POSTGRES_HOST: localhost
+      - DATABASE_URL=database
+      - DATABASE_PORT=5432
+  database:
+    image: postgres:14
+    container_name: kupipodariday
+    ports: 5432:5432
+    volumes: 
+      db-kupipodariday: /var/lib/docker/volumes/db-kupipodariday/_data
+    environment:
+      POSTGRES_HOST: db-kupipodariday
       POSTGRES_PORT: 5432
       POSTGRES_PGDATA: /var/lib/docker/volumes/db-kupipodariday/_data
       POSTGRES_USER: student
       JWT_SECRET: some-extra-super-secret-key-that-noone-will-ever-know-about
       POSTGRES_DB: kupipodariday
       POSTGRES_PASSWORD: student
-
