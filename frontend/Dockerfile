@@ -19,4 +19,4 @@ WORKDIR /var/www/app/frontend
 
 COPY --from=build /var/www/app/build /var/www/app/frontend
 
-COPY ./nginx/default.conf  /etc/nginx/conf.d
+COPY nginx/default.conf  ../../etc/nginx/conf.d
