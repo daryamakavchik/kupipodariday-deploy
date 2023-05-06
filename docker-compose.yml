@@ -8,8 +8,6 @@ services:
     image: daryamakauchyk/kupipodariday-frontend
     ports:
       - 8081:80
-    context: .
-    target: builder
     volumes:
       - .:/app
       - /app/node_modules
