@@ -2,7 +2,7 @@ FROM node:16-alpine as build
 
 WORKDIR /var/www/app
 
-COPY package*.json /app/
+COPY package*.json .
 
 RUN npm i
 
