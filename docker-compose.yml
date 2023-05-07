@@ -7,7 +7,7 @@ services:
   frontend:
     image: daryamakauchyk/kupipodariday-frontend:latest
     ports:
-      - 8081:8081
+      - 8081:80
   backend:
     image: daryamakauchyk/kupipodariday-backend:latest
     ports:
