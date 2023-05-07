@@ -26,3 +26,10 @@ services:
       - 5432:5432
     volumes: 
       - /var/lib/docker/volumes/db-kupipodariday/_data
+    environment:
+      POSTGRES_HOST: db-kupipodariday
+      POSTGRES_PORT: 5432
+      POSTGRES_PGDATA: /var/lib/docker/volumes/db-kupipodariday/_data
+      POSTGRES_USER: student
+      POSTGRES_DB: kupipodariday
+      POSTGRES_PASSWORD: student
