@@ -1,7 +1,3 @@
-# backend
-# frontend
-# database
-
 version: "3.9"
 services:
   frontend:
@@ -17,8 +13,8 @@ services:
     depends_on:
       - database
     environment:
-      - DATABASE_URL=database
-      - DATABASE_PORT=5432
+      DATABASE_URL: database
+      DATABASE_PORT: 5432
   database:
     image: postgres:14
     container_name: kupipodariday
