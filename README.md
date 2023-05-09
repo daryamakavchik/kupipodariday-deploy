@@ -1,3 +1,20 @@
-# Докеризация приложения
+# KupiPodariDay #
 
-Перед тем как приступить к выполнению проектной работы разместите в репозитории исходный код фронтенд и бэкенд частей сервиса КупиПодариДай, реализованного вами ранее. 
+KupiPodariDay is a wishlist service, where registered users can pick a kind of gift they'd like to receive, as well as chip in for others, indicating the amount they're willing to spend.
+
+**Technologies**
+
+* Typescript;
+* PostgreSQL; 
+* TypeORM;
+* NestJS;
+* Node.js 
+
+**Server IP** 
+84.201.141.185
+
+**Link to the project**
+https://kupipodariday.student.nomoredomains.monster/
+
+**Link to API**
+https://api.kupipodariday.student.nomoredomains.monster/
