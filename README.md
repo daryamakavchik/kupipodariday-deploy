@@ -5,6 +5,7 @@ KupiPodariDay is a wishlist service, where registered users can pick a kind of g
 **Technologies**
 
 * Typescript;
+* ReactJS;
 * PostgreSQL; 
 * TypeORM;
 * NestJS;
