@@ -35,5 +35,3 @@ lerna-debug.log*
 !.vscode/extensions.json
 
 .env
-
-sudo ln -s /etc/nginx/sites-available/<имя_домена> /etc/nginx/sites-enabled/<имя_домена> 
