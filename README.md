@@ -12,7 +12,7 @@ KupiPodariDay is a wishlist service, where registered users can pick a kind of g
 * Node.js 
 
 **Server IP** 
-84.201.141.185
+158.160.16.44
 
 **Link to the project**
 https://kupipodariday.student.nomoredomains.monster/
