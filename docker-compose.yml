@@ -5,12 +5,6 @@ services:
     ports:
       - 8081:80
     restart: on-failure 
-    healthcheck:
-      test: "wget -nv -t1 --spider 'http://localhost:8081/'"
-      interval: 1m30s
-      timeout: 10s
-      retries: 3
-      start_period: 40s
   backend:
     image: daryamakauchyk/kupipodariday-backend:latest
     ports:
@@ -23,12 +17,6 @@ services:
     environment:
       DATABASE_URL: database
       DATABASE_PORT: 5432
-    healthcheck:
-      test: "wget -nv -t1 --spider 'http://localhost:4000/'"
-      interval: 1m30s
-      timeout: 10s
-      retries: 3
-      start_period: 40s
   database:
     image: postgres:14
     container_name: kupipodariday
