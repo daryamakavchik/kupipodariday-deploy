@@ -25,13 +25,14 @@ async function bootstrap() {
     }),
   );
 
-  app.enableCors();
-  app.use(
-    cors({
-      credentials: true,
-      origin: 'https://kupipodariday.student.nomoredomains.monster',
-    }),
-  );
+  app.enableCors({
+    credentials: true,
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+    origin: [
+      'http://kupipodariday.student.nomoredomains.monster',
+      'https://kupipodariday.student.nomoredomains.monster',
+    ],
+  });
   app.useLogger(app.get(WINSTON_MODULE_NEST_PROVIDER));
   app.use(limiter);
   app.use(helmet());
