@@ -11,7 +11,7 @@ module.exports = {
       ref: DEPLOY_REF,
       repo: DEPLOY_REPO,
       path: DEPLOY_PATH,
-      'post-deploy': 'sudo docker-compose down && docker-compose build --pull && docker-compose up -d',
+      'post-deploy': 'sudo docker-compose down && sudo docker-compose build --pull && sudo docker-compose up -d',
     },
   },
 };
