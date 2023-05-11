@@ -2,6 +2,7 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { ValidationPipe } from '@nestjs/common';
 import helmet from 'helmet';
+import cors from 'cors';
 import rateLimit from 'express-rate-limit';
 import { ErrorCode } from './exceptions/error-constants';
 import { WINSTON_MODULE_NEST_PROVIDER } from 'nest-winston';
@@ -25,6 +26,12 @@ async function bootstrap() {
   );
 
   app.enableCors();
+  app.use(
+    cors({
+      credentials: true,
+      origin: 'https://kupipodariday.student.nomoredomains.monster',
+    }),
+  );
   app.useLogger(app.get(WINSTON_MODULE_NEST_PROVIDER));
   app.use(limiter);
   app.use(helmet());
