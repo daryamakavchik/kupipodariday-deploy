@@ -27,11 +27,12 @@ async function bootstrap() {
   app.enableCors({
     credentials: true,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
-    origin: [
-      'http://kupipodariday.student.nomoredomains.monster',
-      'https://kupipodariday.student.nomoredomains.monster',
-      'http://localhost:8081',
-    ],
+    origin: '*',
+    // [
+    //   'http://kupipodariday.student.nomoredomains.monster',
+    //   'https://kupipodariday.student.nomoredomains.monster',
+    //   'http://localhost:8081',
+    // ],
   });
   app.useLogger(app.get(WINSTON_MODULE_NEST_PROVIDER));
   app.use(limiter);
