@@ -15,8 +15,8 @@ services:
     depends_on:
       - database
     environment:
-      DATABASE_URL: database
-      DATABASE_PORT: 5432
+      DATABASE_URL: ${DATABASE_URL}
+      DATABASE_PORT: ${DATABASE_PORT}
   database:
     image: postgres:14
     container_name: kupipodariday
@@ -26,9 +26,9 @@ services:
     volumes: 
       - /var/lib/docker/volumes/db-kupipodariday/_data
     environment:
-      POSTGRES_HOST: db-kupipodariday
-      POSTGRES_PORT: 5432
-      POSTGRES_PGDATA: /var/lib/docker/volumes/db-kupipodariday/_data
-      POSTGRES_USER: student
-      POSTGRES_DB: kupipodariday
-      POSTGRES_PASSWORD: student
+      POSTGRES_HOST: ${POSTGRES_HOST}
+      POSTGRES_PORT: ${POSTGRES_PORT}
+      POSTGRES_PGDATA: ${POSTGRES_PGDATA}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
