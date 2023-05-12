@@ -16,9 +16,7 @@ WORKDIR /var/www/app
 
 COPY --from=build /var/www/app/package*.json ./
 
-RUN npm i --omit=dev 
-
-RUN npm install pm2 -g
+RUN npm i --omit=dev
 
 COPY --from=build /var/www/app/dist ./dist/
 

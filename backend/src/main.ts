@@ -2,7 +2,6 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { ValidationPipe } from '@nestjs/common';
 import helmet from 'helmet';
-import cors from 'cors';
 import rateLimit from 'express-rate-limit';
 import { ErrorCode } from './exceptions/error-constants';
 import { WINSTON_MODULE_NEST_PROVIDER } from 'nest-winston';
@@ -31,6 +30,7 @@ async function bootstrap() {
     origin: [
       'http://kupipodariday.student.nomoredomains.monster',
       'https://kupipodariday.student.nomoredomains.monster',
+      'http://localhost:8081',
     ],
   });
   app.useLogger(app.get(WINSTON_MODULE_NEST_PROVIDER));
