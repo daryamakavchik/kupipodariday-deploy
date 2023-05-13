@@ -4,7 +4,7 @@ WORKDIR /var/www/app
 
 COPY package*.json ./
 
-RUN npm i
+RUN npm ci
 
 COPY . .
 
@@ -16,7 +16,7 @@ WORKDIR /var/www/app
 
 COPY --from=build /var/www/app/package*.json ./
 
-RUN npm i --omit=dev
+RUN npm ci --omit=dev
 
 COPY --from=build /var/www/app/dist ./dist/
 

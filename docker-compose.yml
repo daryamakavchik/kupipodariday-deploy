@@ -1,12 +1,16 @@
 version: "3.3"
 services:
   frontend:
+    container_name: frontend
     image: daryamakauchyk/kupipodariday-frontend:latest
+    build: ./frontend
     ports:
       - 8081:80
     restart: on-failure 
   backend:
+    container_name: backend
     image: daryamakauchyk/kupipodariday-backend:latest
+    build: ./backend
     ports:
       - 4000:3000
     restart: on-failure 
@@ -14,9 +18,6 @@ services:
       - database
     depends_on:
       - database
-    environment:
-      DATABASE_URL: database
-      DATABASE_PORT: 5432
   database:
     image: postgres:14
     container_name: kupipodariday
