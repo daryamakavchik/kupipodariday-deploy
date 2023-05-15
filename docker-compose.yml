@@ -30,3 +30,6 @@ services:
       - /var/lib/docker/volumes/db-kupipodariday/_data
     env_file:
       - ./.env
+    environment:
+      - POSTGRES_USERNAME=student
+      - POSTGRES_PASSWORD=student
