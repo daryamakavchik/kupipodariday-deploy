@@ -4,7 +4,6 @@ import { Wish } from 'src/wishes/entities/wish.entity';
 import { Wishlist } from 'src/wishlists/entities/wishlist.entity';
 
 export default () => ({
-  port: parseInt(process.env.POSTGRES_PORT, 10) || 8000,
   database: {
     type: 'postgres',
     url: process.env.POSTGRES_HOST || 'database',
