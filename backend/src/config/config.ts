@@ -7,7 +7,7 @@ export default () => ({
   port: parseInt(process.env.PORT, 10) || 8000,
   database: {
     type: 'postgres',
-    url: process.env.DATABASE_URL || 'localhost',
+    url: process.env.DATABASE_URL || '127.0.0.1',
     port: parseInt(process.env.DATABASE_PORT, 10) || 5432,
     username: process.env.DATABASE_USER || 'student',
     password: process.env.DATABASE_PASSWORD || 'student',
