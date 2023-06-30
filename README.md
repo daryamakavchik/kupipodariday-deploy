@@ -1,21 +1,35 @@
-# KupiPodariDay #
+# KupiPodariDay Deploy #
 
-KupiPodariDay is a wishlist service, where registered users can pick a kind of gift they'd like to receive, as well as chip in for others, indicating the amount they're willing to spend.
-
-**Technologies**
-
-* Typescript;
-* ReactJS;
-* PostgreSQL; 
-* TypeORM;
-* NestJS;
-* Node.js 
-
-**Server IP** 
+#### [Deployed project link](https://kupipodariday.student.nomoredomains.monster/)
+#### [API link](https://api.kupipodariday.student.nomoredomains.monster/)
+#### **Server IP** 
 158.160.16.44
 
-**Link to the project**
-https://kupipodariday.student.nomoredomains.monster/
+## Description 
+"KupiPodariDay Deploy" is a portfolio project created as an assignment for [Yandex.Practicum](https://practicum.yandex.com/web/ "Web Development Program"). It is a wishlist service, where registered users can pick a kind of gift they'd like to receive, as well as chip in for others, indicating the amount they're willing to spend.
 
-**Link to API**
-https://api.kupipodariday.student.nomoredomains.monster/
+[Frontend part provided by Yandex](https://github.com/daryamakavchik/mesto-project-pair)
+[Backend part](https://github.com/daryamakavchik/kupipodariday-backend)
+
+This work was aimed at learning deployment to a remote cloud server. For this, I created a remote server based on Linux Ubuntu at [console.cloud.yandex.ru](https://console.cloud.yandex.ru/) and registered two domains (domain for frontend and subdomain for backend) at [domains.nomoreparties.site](domains.nomoreparties.site). 
+
+What was also done:
+* .env files for frontend and backend
+* pm2 deployment scenarios
+* set up Firewall and nginx
+* registered SSL certificates (available at both https and http)
+* set up Docker and Docker compose on a remote server
+* used Docker containers and images to deploy a website
+
+## Tech Stack
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![NodeJS](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![NGINX](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
+
+## TO DO
+- [ ] make link workable (set up vm again)
+
