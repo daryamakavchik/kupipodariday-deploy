@@ -9,6 +9,7 @@
 "KupiPodariDay Deploy" is a portfolio project created as an assignment for [Yandex.Practicum](https://practicum.yandex.com/web/ "Web Development Program"). It is a wishlist service, where registered users can pick a kind of gift they'd like to receive, as well as chip in for others, indicating the amount they're willing to spend.
 
 [Frontend part provided by Yandex](https://github.com/daryamakavchik/mesto-project-pair)
+</br>
 [Backend part](https://github.com/daryamakavchik/kupipodariday-backend)
 
 This work was aimed at learning deployment to a remote cloud server. For this, I created a remote server based on Linux Ubuntu at [console.cloud.yandex.ru](https://console.cloud.yandex.ru/) and registered two domains (domain for frontend and subdomain for backend) at [domains.nomoreparties.site](domains.nomoreparties.site). 
