@@ -6,7 +6,7 @@
 158.160.16.44
 
 ## Description 
-"KupiPodariDay Deploy" is a portfolio project created as an assignment for [Yandex.Practicum](https://practicum.yandex.com/web/ "Web Development Program"). It is a wishlist service, where registered users can pick a kind of gift they'd like to receive, as well as chip in for others, indicating the amount they're willing to spend.
+"KupiPodariDay Deploy" is a portfolio project created as an assignment for [Yandex.Practicum](https://practicum.yandex.com/web/ "Web Development Program"). It is a wishlist service, where registered users can pick a kind of gift they would like to receive, as well as chip in for others, indicating the amount they're willing to spend.
 
 [Frontend part provided by Yandex](https://github.com/daryamakavchik/mesto-project-pair)
 </br>
@@ -17,10 +17,10 @@ This work was aimed at learning deployment to a remote cloud server. For this, I
 What was also done:
 * .env files for frontend and backend
 * pm2 deployment scenarios
-* set up Firewall and nginx
-* registered SSL certificates (available at both https and http)
-* set up Docker and Docker compose on a remote server
-* used Docker containers and images to deploy a website
+* Firewall and Nginx set up
+* SSL certificates (available at both https and http)
+* Docker and Docker compose set up on a remote server
+* Docker containers and images for website deployment
 
 ## Tech Stack
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
@@ -32,5 +32,5 @@ What was also done:
 ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
 
 ## TO DO
-- [ ] make link workable (set up vm again)
+- [ ] make link workable (set up vm)
 
