@@ -1,7 +1,7 @@
 # KupiPodariDay Deploy #
 
-#### [Deployed project link](https://kupipodariday.student.nomoredomains.monster/)
-#### [API link](https://api.kupipodariday.student.nomoredomains.monster/)
+#### [Deployed project link](https://kupipodariday.azurewebsites.net/)
+#### [API link](https://apikupipodariday.azurewebsites.net/)
 #### **Server IP** 
 158.160.16.44
 
@@ -12,7 +12,7 @@
 </br>
 [Backend part](https://github.com/daryamakavchik/kupipodariday-backend)
 
-This work was aimed at learning deployment to a remote cloud server. For this, I created a remote server based on Linux Ubuntu at [console.cloud.yandex.ru](https://console.cloud.yandex.ru/) and registered two domains (domain for frontend and subdomain for backend) at [domains.nomoreparties.site](domains.nomoreparties.site). 
+This work was aimed at learning deployment to a remote cloud server.
 
 What was also done:
 * .env files for frontend and backend
@@ -32,5 +32,5 @@ What was also done:
 ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
 
 ## TO DO
-- [ ] make link workable (set up vm)
+- [x] make link workable (set up vm)
 
