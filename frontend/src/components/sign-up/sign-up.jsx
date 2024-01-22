@@ -101,7 +101,7 @@ export const SignUp = ({ extraClass = "" }) => {
       <h2
         className={`text text_type_h2 text_color_primary mb-16 ${styles.title}`}
       >
-        {`Регистрация ${step === 1 ? "1/2" : "2/2"}`}
+        {`Sign up ${step === 1 ? "1/2" : "2/2"}`}
       </h2>
       <form className={styles.form}>
         {step === 1 ? (
@@ -117,7 +117,7 @@ export const SignUp = ({ extraClass = "" }) => {
               className={styles.back_to_first_step}
               onClick={handleBackToFirstStep}
             >
-              Вернуться на первый шаг
+              Go back to the first step
             </button>
           </>
         )}
@@ -134,13 +134,13 @@ export const SignUp = ({ extraClass = "" }) => {
         <p
           className={`text text_type_main text_color_primary mb-9 ${styles.text}`}
         >
-          Уже зарегистрированы?
+          Already registered?
         </p>
         <NavLink
           to="/signin"
           className={`text text_type_button text_color_primary ${styles.nav}`}
         >
-          Войти
+          Sign in
         </NavLink>
       </div>
     </div>
@@ -154,8 +154,8 @@ const StepOne = ({ onChangeInput, data }) => {
         name="username"
         type="username"
         id={1}
-        placeholder="Придумайте юзернейм"
-        label="Юзернейм"
+        placeholder="Create username"
+        label="Username"
         value={data.username}
         onChange={onChangeInput}
         extraClass="mb-16"
@@ -166,7 +166,7 @@ const StepOne = ({ onChangeInput, data }) => {
         name="email"
         type="email"
         id={2}
-        placeholder="Укажите тут"
+        placeholder="Add email"
         label="E-mail"
         value={data.email}
         onChange={onChangeInput}
@@ -177,8 +177,8 @@ const StepOne = ({ onChangeInput, data }) => {
         name="password"
         type="password"
         id={3}
-        placeholder="Придумайте пароль"
-        label="Пароль"
+        placeholder="Create password"
+        label="Password"
         value={data.password}
         onChange={onChangeInput}
         minLength={MINIMUM_PASSWORD_LENGTH}
@@ -195,8 +195,8 @@ const StepTwo = ({ onChangeInput }) => {
         name="about"
         type="about"
         id={5}
-        placeholder="Расскажите о себе"
-        label="О себе"
+        placeholder="Tell a bit about yourself"
+        label="About yourself"
         onChange={onChangeInput}
         extraClass="mb-16"
         maxLength={MAXIMUM_DESCRIPTION_LENGTH}
@@ -205,8 +205,8 @@ const StepTwo = ({ onChangeInput }) => {
         name="avatar"
         type="url"
         id={7}
-        placeholder="Укажите тут ссылку на аватар"
-        label="Аватар"
+        placeholder="Add avatar link"
+        label="Avatar"
         onChange={onChangeInput}
         extraClass="mb-16"
       />

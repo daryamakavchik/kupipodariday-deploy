@@ -17,7 +17,7 @@ export const CardListView = ({
     <>
       <section className={styles.box}>
         <h2 className="text text_type_h2 text_color_primary mb-16">
-          Недавно добавленные
+          Recently added
         </h2>
         <div className={styles.cards_box}>
           {lastCards && (
@@ -31,7 +31,7 @@ export const CardListView = ({
       </section>
       <section className={styles.box}>
         <h2 className="text text_type_h2 text_color_primary mb-16">
-          Популярные
+          Popular
         </h2>
         <div className={styles.cards_box}>
           {topCards && (

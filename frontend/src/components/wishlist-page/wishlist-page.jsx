@@ -63,42 +63,42 @@ export const WishlistPage = ({ extraClass = "" }) => {
   return (
     <section className={`${styles.content} ${extraClass}`}>
       <h1 className={`text text_type_h1 text_color_primary ${styles.title}`}>
-        Мой вишлист
+        My wishlist
       </h1>
       {currentCardsId.length ? (
         <div className={styles.menu}>
-          <p className="text text_type_button">{`Выберите то, что хотите удалить | ${currentCardsId.length} выбрано`}</p>
+          <p className="text text_type_button">{`Select items to delete | ${currentCardsId.length} chosen`}</p>
           <div className={styles.btn_box}>
             <button
               className={styles.btn}
               type="button"
               onClick={handleRemoveSelection}
             >
-              <img src={cancelIcon} alt="Кнопка снятия выделения." />
-              <p className="text text_type_button ml-4">Снять выделение</p>
+              <img src={cancelIcon} alt="Button to cancel selection." />
+              <p className="text text_type_button ml-4">Cancel selection</p>
             </button>
             <button
               className={styles.btn}
               type="button"
               onClick={handlePopupOpen}
             >
-              <img src={trashIcon} alt="Кнопка удаления карточки." />
+              <img src={trashIcon} alt="Button to remove card." />
               <p className="text text_type_button text_color_red-bg ml-4">
-                Удалить выбранное
+                Delete selected items
               </p>
             </button>
             {isPopupOpen && (
               <Modal onClose={handlePopupClose} extraClass={styles.modal}>
                 <div className={styles.popup}>
                   <p className="text text_type_main mb-10">
-                    Удалить выбранные подарки?
+                    Delete selected gifts?
                   </p>
                   <div className={styles.popup_btn_box}>
                     <Button
                       type="button"
                       extraClass={styles.popup_btn}
                       kind="support"
-                      text="Отмена"
+                      text="Cancel"
                       onClick={handleRemoveSelection}
                     />
                     <Button
@@ -106,7 +106,7 @@ export const WishlistPage = ({ extraClass = "" }) => {
                       extraClass={styles.popup_btn}
                       kind="secondary"
                       onClick={handleRemoveCards}
-                      text="Удалить"
+                      text="Delete"
                     />
                   </div>
                 </div>

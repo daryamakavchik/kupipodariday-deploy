@@ -59,7 +59,7 @@ export const CollectionsView = ({ url, ownWishes }) => {
     <section className={styles.collections}>
       <Button
         kind="primary"
-        text="Добавить коллекцию"
+        text="Add collection"
         onClick={handleCollectionPopupOpen}
       />
       <div className={styles.cards_box}>
@@ -85,7 +85,7 @@ export const CollectionsView = ({ url, ownWishes }) => {
                   className={styles.remove_btn}
                   onClick={handleRemoveClick}
                 >
-                  <img src={trashIcon} alt="Удалить." />
+                  <img src={trashIcon} alt="Delete." />
                 </button>
               )}
             </NavLink>
@@ -103,7 +103,7 @@ export const CollectionsView = ({ url, ownWishes }) => {
       {isRemovePopupOpen && (
         <Modal onClose={handlePopupClose} extraClass={styles.modal}>
           <div className={styles.popup}>
-            <p className="text text_type_main mb-10">Удалить коллекцию?</p>
+            <p className="text text_type_main mb-10">Delete collection?</p>
             {errorRemoveMessage && (
               <span className={styles.error}>{errorRemoveMessage}</span>
             )}
@@ -112,7 +112,7 @@ export const CollectionsView = ({ url, ownWishes }) => {
                 type="button"
                 extraClass={styles.popup_btn}
                 kind="support"
-                text="Отмена"
+                text="Cancel"
                 onClick={handlePopupClose}
               />
               <Button
@@ -120,7 +120,7 @@ export const CollectionsView = ({ url, ownWishes }) => {
                 extraClass={styles.popup_btn}
                 kind="secondary"
                 onClick={handleRemoveCollection}
-                text="Удалить"
+                text="Delete"
               />
             </div>
           </div>
@@ -199,30 +199,30 @@ const CollectionAddModal = ({
         onSubmit={submitCollection}
         ref={formRef}
       >
-        <h2 className="text text_type_h2 mb-16">Добавить подарок</h2>
+        <h2 className="text text_type_h2 mb-16">Add gift</h2>
         <Input
           type="text"
           id={20}
           extraClass="mb-12"
-          label="Название коллекции"
+          label="Collection name"
           name="name"
           onChange={onFormChange}
-          placeholder="Укажите название коллекции"
+          placeholder="Add collection name"
           required
         />
         <Input
           type="url"
           extraClass="mb-12"
           name="image"
-          label="Ссылка на изображение"
+          label="Image link"
           onChange={onFormChange}
-          placeholder="Укажите ссылку"
+          placeholder="Add image link"
           required
         />
         <p
           className={`text text_type_main text_color_black mb-4 ${styles.wishes_text}`}
         >
-          Выберите товары из вашего вишлиста:
+          Choose items from your wishlist:
         </p>
         <div className={styles.wishes}>
           {ownWishes.map((item) => {
@@ -247,7 +247,7 @@ const CollectionAddModal = ({
         <Button
           type="submit"
           extraClass={styles.collection_btn}
-          text="Добавить коллекцию"
+          text="Add collection"
           kind="secondary"
           disabled={!valid}
         />

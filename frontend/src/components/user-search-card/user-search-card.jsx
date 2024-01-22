@@ -19,7 +19,7 @@ export const UserSearchCard = ({ name = "", img, extraClass = "" }) => {
         <h2 className="text text_type_h2 text_color_primary mb-2">{name}</h2>
       </div>
       <Button
-        text="Перейти на страницу"
+        text="Go to page"
         type="button"
         kind="additional"
         extraClass={styles.btn}

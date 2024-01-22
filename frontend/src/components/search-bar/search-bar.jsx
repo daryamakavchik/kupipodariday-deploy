@@ -22,10 +22,10 @@ export const SearchBar = ({ query, changeQuery, setQueryHits }) => {
         value={query}
         onChange={changeQuery}
         extraClass={`pr-8 ${styles.searchBar__input}`}
-        placeholder="Найти пользователя"
+        placeholder="Find user"
       />
 
-      <Button text="Искать" kind="secondary" type="submit" />
+      <Button text="Search" kind="secondary" type="submit" />
     </form>
   );
 };

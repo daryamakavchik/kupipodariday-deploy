@@ -57,7 +57,7 @@ export const ProfilePage = ({ extraClass = "" }) => {
         .then(() => {
           refreshUser(setUserCtx);
           setUpdateMessages({
-            successProfile: "Изменения успешно сохранены!",
+            successProfile: "Changes saved!",
           });
         })
         .catch((err) => {
@@ -72,7 +72,7 @@ export const ProfilePage = ({ extraClass = "" }) => {
         .then(() => {
           refreshUser(setUserCtx);
           setUpdateMessages({
-            successPersonal: "Изменения успешно сохранены!",
+            successPersonal: "Changes saved!",
           });
         })
         .catch((err) => {
@@ -86,10 +86,10 @@ export const ProfilePage = ({ extraClass = "" }) => {
   return (
     <section className={`${styles.content} ${extraClass}`}>
       <h1 className={`text text_type_h1 text_color_primary ${styles.title}`}>
-        Профиль {userCtx.username}
+        Profile {userCtx.username}
       </h1>
       <h2 className={`text text_type_h2 text_color_primary mb-20`}>
-        Настройки профиля
+        Profile settings
       </h2>
       <form className={styles.form} onSubmit={submitFormData}>
         <label htmlFor="image" className={styles.img_box}>
@@ -102,8 +102,8 @@ export const ProfilePage = ({ extraClass = "" }) => {
           type="url"
           id="avatar"
           defaultValue={userCtx.avatar}
-          placeholder="Укажите тут ссылку на аватар"
-          label="Аватар"
+          placeholder="Add avatar link"
+          label="Avatar"
           onChange={changeProfileData}
           extraClass="mb-16"
           required={true}
@@ -113,15 +113,15 @@ export const ProfilePage = ({ extraClass = "" }) => {
           type="text"
           id="about"
           defaultValue={userCtx.about}
-          placeholder="Несколько предложений о себе"
-          label="О себе"
+          placeholder="A bit about yourself"
+          label="About yourself"
           onChange={changeProfileData}
           maxLength={MAXIMUM_DESCRIPTION_LENGTH}
         />
         <p className={`text text_type_small mt-4 mb-16 ${styles.caption}`}>
           {`${
             profileData?.about?.length || userCtx?.about.length || 0
-          }/${MAXIMUM_DESCRIPTION_LENGTH} символов`}
+          }/${MAXIMUM_DESCRIPTION_LENGTH} symbols`}
         </p>
         {updateMessages.successProfile && (
           <span className={styles.success_message}>
@@ -136,7 +136,7 @@ export const ProfilePage = ({ extraClass = "" }) => {
         <Button
           type="submit"
           kind="secondary"
-          text="Сохранить изменения"
+          text="Save changes"
           name="profileData"
           extraClass={styles.btn}
           value="profileData"
@@ -144,13 +144,13 @@ export const ProfilePage = ({ extraClass = "" }) => {
         <h2
           className={`text text_type_h2 text_color_primary mb-16 ${styles.h2}`}
         >
-          Личная информация
+          Personal data
         </h2>
         <Input
           name="email"
           type="email"
           id={4}
-          placeholder="Укажите тут"
+          placeholder="Add email"
           label="E-mail"
           onChange={changePersonalData}
           extraClass="mb-12"
@@ -161,7 +161,7 @@ export const ProfilePage = ({ extraClass = "" }) => {
           type="password"
           id="password"
           placeholder="*******"
-          label="Пароль"
+          label="Password"
           onChange={changePersonalData}
           extraClass="mb-16"
         />
@@ -170,7 +170,7 @@ export const ProfilePage = ({ extraClass = "" }) => {
           type="text"
           id={5}
           placeholder="username"
-          label="Юзернейм"
+          label="Username"
           onChange={changePersonalData}
           extraClass="mb-16"
           defaultValue={userCtx.username}
@@ -189,7 +189,7 @@ export const ProfilePage = ({ extraClass = "" }) => {
         <Button
           type="submit"
           kind="secondary"
-          text="Сохранить изменения"
+          text="Save changes"
           name="personalData"
           extraClass={styles.btn}
           value="personalData"

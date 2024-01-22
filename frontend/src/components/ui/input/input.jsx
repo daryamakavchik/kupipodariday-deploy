@@ -48,7 +48,7 @@ export const Input = ({
           <img
             className={styles.eye_img}
             src={passwordIcon}
-            alt="Посмотреть пароль."
+            alt="See password."
           />
         </button>
       )}

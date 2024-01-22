@@ -18,7 +18,7 @@ export const Modal = ({
       <div className={`${styles.content} ${extraClass}`}>
         {isCloseBtn && (
           <button className={styles.close_btn} type="button" onClick={onClose}>
-            <img src={closeIcon} alt="Кнопка закрытия." />
+            <img src={closeIcon} alt="Close button." />
           </button>
         )}
         {children}

@@ -26,14 +26,14 @@ export const Subheader = ({ path, isLogin }) => {
       <h1
         className={`text text_type_h1 text_color_primary mb-16 ${styles.title}`}
       >
-        Подарки
+        Gifts
       </h1>
       <div className={styles.tabs}>
         <Button
           kind={activeTab === "line" ? "secondary" : "tab"}
           type="button"
           name="line"
-          text="Лента"
+          text="Feed"
           extraClass={styles.tab}
           onClick={onTabsClick}
         />
@@ -41,7 +41,7 @@ export const Subheader = ({ path, isLogin }) => {
           kind={activeTab === "collections" ? "secondary" : "tab"}
           type="button"
           name="collections"
-          text="Коллекции"
+          text="Collections"
           extraClass={styles.tab}
           onClick={onTabsClick}
           disabled={!isLogin}

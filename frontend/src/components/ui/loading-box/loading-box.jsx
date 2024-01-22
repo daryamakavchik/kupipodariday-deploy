@@ -11,7 +11,7 @@ export const LoadingBox = ({ current = 0, total = 1000, extraClass = "" }) => {
         <div className={styles.loading} style={{ width: loadingWidh }} />
       </div>
       <p className={`text text_type_main text_color_primary mt-8`}>
-        {`Собрано: ${current}/${total} руб.`}
+        {`Collected: ${current}/${total} руб.`}
       </p>
     </div>
   );

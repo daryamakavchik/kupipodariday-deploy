@@ -30,6 +30,8 @@ async function bootstrap() {
     origin: [
       'http://kupipodariday.student.nomoredomains.monster',
       'https://kupipodariday.student.nomoredomains.monster',
+      'http://kupipodariday.azurewebsites.net',
+      'https://kupipodariday.azurewebsites.net',
       'http://localhost:8081',
     ],
   });

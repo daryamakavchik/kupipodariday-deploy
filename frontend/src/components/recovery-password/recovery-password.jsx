@@ -39,7 +39,7 @@ export const RecoveryPassword = ({ extraClass = "" }) => {
       <h2
         className={`text text_type_h2 text_color_primary mb-16 ${styles.title}`}
       >
-        Восстановление пароля
+        Password recovery
       </h2>
       <form className={styles.form}>
         {step === 1 ? (
@@ -47,7 +47,7 @@ export const RecoveryPassword = ({ extraClass = "" }) => {
             name="email"
             type="email"
             id={1}
-            placeholder="Укажите тут"
+            placeholder="Add email"
             label="E-mail"
             onChange={onChangeInput}
           />
@@ -57,8 +57,8 @@ export const RecoveryPassword = ({ extraClass = "" }) => {
               name="password"
               type="password"
               id={2}
-              placeholder="Введите новый пароль"
-              label="Новый пароль"
+              placeholder="New password"
+              label="New password"
               onChange={onChangeInput}
               extraClass="mb-16"
             />
@@ -66,8 +66,8 @@ export const RecoveryPassword = ({ extraClass = "" }) => {
               name="text"
               type="text"
               id={3}
-              placeholder="Введите код из письма"
-              label="Код из письма"
+              placeholder="Enter the code from email"
+              label="Code from email"
               onChange={onChangeInput}
             />
           </>
@@ -75,7 +75,7 @@ export const RecoveryPassword = ({ extraClass = "" }) => {
         <Button
           type="button"
           kind="secondary"
-          text={`${step === 1 ? "Восстановить" : "Сохранить"}`}
+          text={`${step === 1 ? "Recover" : "Save"}`}
           extraClass={styles.btn}
           onClick={handleSubmit}
         />
@@ -84,13 +84,13 @@ export const RecoveryPassword = ({ extraClass = "" }) => {
         <p
           className={`text text_type_main text_color_primary mb-9 ${styles.text}`}
         >
-          Вспомнили пароль?
+          Remembered your password?
         </p>
         <NavLink
           to="/signin"
           className={`text text_type_button text_color_primary ${styles.nav}`}
         >
-          Войти
+          Sign in
         </NavLink>
       </div>
     </div>

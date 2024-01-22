@@ -34,6 +34,7 @@ import { DatabaseService } from './database/dbservice';
     TypeOrmModule.forRootAsync({
       useClass: DatabaseService,
       inject: [DatabaseService],
+      imports: undefined
     }),
     UsersModule,
     WishesModule,

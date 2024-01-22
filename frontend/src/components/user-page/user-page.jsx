@@ -43,17 +43,17 @@ export const UserPage = ({ extraClass = "" }) => {
       <h1
         className={`text text_type_h1 text_color_primary mb-16 ${styles.title}`}
       >
-        {`Пользователь: ${anotherUser?.username} `}
+        {`User: ${anotherUser?.username} `}
       </h1>
 
       <p
         className={`text text_type_main text_color_primary mb-16 ${styles.description}`}
       >
-        {`Обо мне: ${anotherUser?.about || "ничего неизвестно"}`}
+        {`About me: ${anotherUser?.about || "no info"}`}
       </p>
       <div className={styles.cards}>
         <h2 className={`text text_type_h2 text_color_primary ${styles.title}`}>
-          Вишлист пользователя:
+          User wishlist:
         </h2>
         <div className={styles.cards_box}>
           {anotherUserWishes?.map(

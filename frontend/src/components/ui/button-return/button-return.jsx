@@ -18,7 +18,7 @@ export const ButtonReturn = ({ extraClass = "", ...rest }) => {
       {...rest}
     >
       <p className={`text text_type_h2 ${styles.text}`}>{"\u{2190}"}</p>
-      <p className={`text text_type_button ml-4`}>Назад</p>
+      <p className={`text text_type_button ml-4`}>Go back</p>
     </button>
   );
 };

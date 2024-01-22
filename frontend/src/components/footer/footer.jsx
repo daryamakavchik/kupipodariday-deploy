@@ -18,10 +18,10 @@ export const Footer = ({ extraClass = "" }) => {
   return (
     <footer className={footerClassList}>
       <div className={styles.content}>
-        <img src={logoIcon} alt="Логотип." />
+        <img src={logoIcon} alt="Logo." />
         <p
           className={`text text_type_footer text_color_primary ${styles.text}`}
-        >{`${"\u{00A9}"}${new Date().getFullYear()}, Купи Подари Дай`}</p>
+        >{`${"\u{00A9}"}${new Date().getFullYear()}, Kupi Podari Day`}</p>
       </div>
     </footer>
   );

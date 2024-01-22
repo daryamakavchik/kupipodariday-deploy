@@ -10,7 +10,7 @@ export const SearchPage = ({ extraClass = "", queryHits }) => {
   return (
     <section className={`${styles.content} ${extraClass}`}>
       <h1 className={`text text_type_h1 text_color_primary ${styles.title}`}>
-        {`Результаты поиска "${queryHits.query}"`}
+        {`Search results "${queryHits.query}"`}
       </h1>
       <h2
         className={`text text_type_h2 text_color_primary mb-16 ${styles.description}`}
@@ -27,7 +27,7 @@ export const SearchPage = ({ extraClass = "", queryHits }) => {
 };
 
 const pluralize = (count) => {
-  const resultsArr = ["результат", "результата", "результатов"];
+  const resultsArr = ["result", "result", "results"];
   const meaningfulDigit = count % 10;
 
   const pluralizer =

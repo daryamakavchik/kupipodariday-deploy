@@ -86,14 +86,14 @@ export const GiftPage = ({ extraClass = "" }) => {
       <ButtonReturn />
       <h1 className="text text_type_h1 mb-16">{wishData.name}</h1>
       <div className={styles.data_box}>
-        <img className={styles.img} src={wishData.image} alt="Фото подарка." />
+        <img className={styles.img} src={wishData.image} alt="Gift." />
         <div className={styles.gift_data}>
           <h2 className="text text_type_h1 mb-16">{`${wishData.price} руб.`}</h2>
 
           <p className="text text_type_main" style={{ maxWidth: "75%" }}>
-            {`Добавлено ${new Date(
+            {`Added ${new Date(
               wishData.createdAt
-            ).toLocaleDateString()} пользователем `}
+            ).toLocaleDateString()} by user`}
             <NavLink
               to={`/users/${wishData?.owner?.username}`}
               className={`text text_type_main text_color_primary ${styles.link}`}
@@ -104,7 +104,7 @@ export const GiftPage = ({ extraClass = "" }) => {
           <p
             className="text text_type_main"
             style={{ maxWidth: "75%" }}
-          >{`Описание: ${wishData.description}`}</p>
+          >{`Description: ${wishData.description}`}</p>
           <LoadingBox
             current={wishData.raised}
             total={wishData.price}
@@ -114,14 +114,14 @@ export const GiftPage = ({ extraClass = "" }) => {
             <Button
               type="support"
               kind="thirdly"
-              text="Перейти в магазин"
+              text="Store"
               extraClass={styles.btn}
               onClick={handleGoToShop}
             />
             <Button
               type="button"
               kind="secondary"
-              text="Поддержать"
+              text="Support"
               extraClass={styles.btn}
               onClick={handlePopupOpen}
               disabled={isRaised}
@@ -129,7 +129,7 @@ export const GiftPage = ({ extraClass = "" }) => {
             <Button
               type="button"
               kind="support"
-              text="Добавить в вишлист"
+              text="Add to wishlist"
               extraClass={styles.btn}
               onClick={handleCopyClick}
               disabled={isAddToWishDisabled}
@@ -139,14 +139,14 @@ export const GiftPage = ({ extraClass = "" }) => {
       </div>
       <div className={styles.supported_box}>
         <div className={styles.subtitle_box}>
-          <h2 className="text text_ty-e_h2">Список поддержавших</h2>
+          <h2 className="text text_ty-e_h2">List of supporters</h2>
         </div>
         {wishData?.offers?.length ? (
           wishData?.offers?.map(({ name, amount, createdAt }) => (
             <UserSupportedCard name={name} amount={amount} date={createdAt} />
           ))
         ) : (
-          <p>Пока никого нет</p>
+          <p>No one supported yet</p>
         )}
       </div>
 
@@ -157,7 +157,7 @@ export const GiftPage = ({ extraClass = "" }) => {
           isCloseBtn={true}
         >
           <div className={styles.popup}>
-            <h2 className="text text_type_h2 mb-20">Поддержите любой суммой</h2>
+            <h2 className="text text_type_h2 mb-20">Support with any sum</h2>
             <div className={`mb-20 ${styles.gift_btns_box}`}>
               {priceArr.map((item, index) => {
                 return (
@@ -166,7 +166,7 @@ export const GiftPage = ({ extraClass = "" }) => {
                     id={item}
                     type="button"
                     extraClass={styles.price_btn}
-                    text={`${item} руб`}
+                    text={`${item} RUB`}
                     kind={
                       currentSupportedBtn === item ||
                       currentSupportedBtn === anotherSum
@@ -180,7 +180,7 @@ export const GiftPage = ({ extraClass = "" }) => {
               <Input
                 type="number"
                 extraInputClass={styles.price_input}
-                placeholder="Сумма"
+                placeholder="Sum"
                 value={anotherSum}
                 onChange={handleChangeInput}
               />
@@ -188,7 +188,7 @@ export const GiftPage = ({ extraClass = "" }) => {
             <Button
               type="button"
               kind="secondary"
-              text="Поддержать"
+              text="Support"
               onClick={handleSupportClick}
               extraClass={styles.supported_btn}
             />

@@ -18,8 +18,6 @@ services:
       - database
     depends_on:
       - database
-    env_file:
-      - ./.env
   database:
     image: postgres:14
     container_name: kupipodariday
@@ -28,5 +26,3 @@ services:
     restart: on-failure 
     volumes: 
       - /var/lib/docker/volumes/db-kupipodariday/_data
-    env_file:
-      - ./.env

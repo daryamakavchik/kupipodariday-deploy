@@ -30,13 +30,13 @@ export const GoodCard = ({
       onClick={onClick}
     >
       <Link to={`/gift/${id}`} className={styles.img_box}>
-        <img className={styles.img} src={img} alt="Фото товара." />
+        <img className={styles.img} src={img} alt="Product." />
       </Link>
       <div className={styles.data_box}>
         <p
           className={`text text_type_h2 text_color_primary mb-4 ${styles.price}`}
         >
-          {`${price} руб.`}
+          {`${price} RUB.`}
         </p>
         <p
           className={`text text_type_main text_color_primary mb-10 ${styles.name}`}
@@ -47,7 +47,7 @@ export const GoodCard = ({
         {pathname !== "/wishlist" && (
           <Button
             extraClass={styles.btn}
-            text="Добавить в вишлист"
+            text="Add to wishlist"
             type="button"
             kind="additional"
             onClick={handleCopyClick}

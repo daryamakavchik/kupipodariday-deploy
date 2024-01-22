@@ -7,7 +7,7 @@ import styles from "./search-box.module.css";
 export const SearchBox = ({
   search,
   setSearch,
-  placeholder = "Подарок 1",
+  placeholder = "Gift 1",
   extraClass = "",
 }) => {
   const [currentSearch, setCurrentSearch] = React.useState("");
@@ -41,7 +41,7 @@ export const SearchBox = ({
       <Button
         type="button"
         kind="secondary"
-        text="Искать"
+        text="Search"
         extraClass={styles.btn}
         onClick={handleSearch}
       />
