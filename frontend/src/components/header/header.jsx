@@ -79,7 +79,7 @@ export const Header = ({ extraClass = "" }) => {
 };
 
 const HeaderLinks = ({ handleProfilePopupOpen, userName }) => {
-  const profileLabel = userName ? `Profile ${userName}` : `Profile`;
+  const profileLabel = userName ? `${userName}'s profile` : `Profile`;
 
   const setInactive = (isActive) => {
     const inactiveClassName = `${styles.nav} ${styles.nav_inactive}`;
@@ -178,7 +178,7 @@ const GiftAddModal = ({ onClose }) => {
           name="description"
           id={23}
           placeholder="A bit about your wish"
-          label="Briefly desctibe your gift"
+          label="Briefly describe your gift"
           onChange={onFormChange}
           maxLength={1024}
           required

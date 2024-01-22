@@ -34,7 +34,7 @@ export const UserSupportedCard = ({
         </p>
         <p
           className={`text text_type_main text_color_primary`}
-        >{`${amount} руб.`}</p>
+        >{`${amount} RUB.`}</p>
       </div>
       <div className={`ml-10 ${styles.data_box}`}>
         <p

@@ -28,7 +28,7 @@ export class User {
   @Column({
     type: 'varchar',
     length: 200,
-    default: 'Пока ничего не рассказал о себе',
+    default: 'No info yet',
   })
   @IsString()
   @Length(2, 200)

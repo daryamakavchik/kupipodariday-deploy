@@ -46,7 +46,7 @@ export class UsersController {
     const user = await this.usersService.findByUsername(username);
 
     if (!user) {
-      throw new Error('Такой пользователь не найден');
+      throw new Error('User not found');
     }
 
     return user;
@@ -57,7 +57,7 @@ export class UsersController {
     const user = await this.usersService.findByUsername(username);
 
     if (!user) {
-      throw new Error('Такой пользователь не найден');
+      throw new Error('User not found');
     }
 
     return this.wishesService.findUsersWishes(user.id);

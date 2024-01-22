@@ -124,7 +124,7 @@ export const SignUp = ({ extraClass = "" }) => {
         <Button
           type="button"
           kind="secondary"
-          text={`${step === 1 ? "Далее" : "Зарегистрироваться"}`}
+          text={`${step === 1 ? "Next" : "Sign up"}`}
           disabled={step === 1 ? stepOneDisabled : stepTwoDisabled}
           extraClass={styles.btn}
           onClick={handleSubmit}

@@ -86,7 +86,7 @@ export const ProfilePage = ({ extraClass = "" }) => {
   return (
     <section className={`${styles.content} ${extraClass}`}>
       <h1 className={`text text_type_h1 text_color_primary ${styles.title}`}>
-        Profile {userCtx.username}
+        {userCtx.username}'s profile
       </h1>
       <h2 className={`text text_type_h2 text_color_primary mb-20`}>
         Profile settings

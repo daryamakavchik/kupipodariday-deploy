@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && scp -Сr ./build/* daryamakauchyk@158.160.16.44:/home/daryamakauchyk/kupipodariday-frontend" 
+    "deploy": "npm run build && scp -Cr ./build/* daryamakauchyk@158.160.16.44:/home/daryamakauchyk/kupipodariday-frontend" 
   },
   "eslintConfig": {
     "extends": [

@@ -22,7 +22,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
     const user = await this.userService.findById(jwtPayload.sub);
 
     if (!user) {
-      throw new Error('Такой пользователь не найден');
+      throw new Error('User not found');
     }
 
     return user;

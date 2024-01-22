@@ -28,19 +28,19 @@ export class OffersService {
     });
 
     if (!wish) {
-      throw new NotFoundException('Такого подарка не найдено');
+      throw new NotFoundException('Present not found');
     }
 
     if (wish.owner.id === user.id) {
       throw new BadRequestException(
-        'Только владелец подарка может его удалять',
+        'Only gift owner can delete this gift',
       );
     }
 
     const raised = wish.raised + amount;
 
     if (raised > wish.price) {
-      throw new BadRequestException('Размер вклада слишком большой');
+      throw new BadRequestException('Exceeded maximum contribution');
     } else {
       wish.raised = wish.raised + amount;
     }

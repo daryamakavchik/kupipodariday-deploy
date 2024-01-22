@@ -1,3 +1,3 @@
-# Фронтенд для проекта КупиПодариДай
+# KupiPodariDay Frontend
 
 

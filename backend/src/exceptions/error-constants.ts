@@ -17,19 +17,19 @@ export enum ErrorCode {
 }
 
 export const code2message = new Map<ErrorCode, string>([
-  [ErrorCode.LoginOrPasswordIncorrect, 'Некорректная пара логин-пароль'],
-  [ErrorCode.UserAlreadyExist, 'Такой пользователь уже существует'],
-  [ErrorCode.AccessDenied, 'Доступ запрещен'],
-  [ErrorCode.UserNotFound, 'Пользователь не найден'],
-  [ErrorCode.UsersNotFound, 'Поиск пользователей не дал результатов'],
-  [ErrorCode.WishNotFound, 'Подарок не найден'],
-  [ErrorCode.NoRightsForEdit, 'Недостаточно прав для редактирования'],
-  [ErrorCode.NoRightsForRemove, 'Недостаточно прав для удаления'],
-  [ErrorCode.CantEdit, 'Невозможно редактировать, т.к. есть сборы'],
-  [ErrorCode.CantOfferForSelf, 'Невозможно скинуться на свой подарок'],
-  [ErrorCode.OfferIsLarge, 'Размер вклада слишком большой'],
-  [ErrorCode.ListNotFound, 'Список подарков не найден'],
-  [ErrorCode.ValidationError, 'Переданы некоректные значения'],
+  [ErrorCode.LoginOrPasswordIncorrect, 'Invalid username/password combination'],
+  [ErrorCode.UserAlreadyExist, 'This user already exists'],
+  [ErrorCode.AccessDenied, 'Access denied'],
+  [ErrorCode.UserNotFound, 'User not found'],
+  [ErrorCode.UsersNotFound, 'User search failed'],
+  [ErrorCode.WishNotFound, 'Gift not found'],
+  [ErrorCode.NoRightsForEdit, 'No rights to edit'],
+  [ErrorCode.NoRightsForRemove, 'No rights to delete'],
+  [ErrorCode.CantEdit, 'Cannot edit due to existing fund raises'],
+  [ErrorCode.CantOfferForSelf, 'Cannot chip in on your own present'],
+  [ErrorCode.OfferIsLarge, 'Exceeded maximum contribution'],
+  [ErrorCode.ListNotFound, 'Gift list not found'],
+  [ErrorCode.ValidationError, 'Incorrect value'],
 ]);
 
 export const code2status = new Map<ErrorCode, HttpStatus>([

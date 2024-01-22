@@ -76,15 +76,15 @@ export class WishesService {
     const candidate = await this.findOne(id);
 
     if (!candidate) {
-      throw new Error('Такой пользователь не найден');
+      throw new Error('User not found');
     }
 
     if (candidate.offers.length > 0) {
-      throw new BadRequestException('Подарок уже был предложен');
+      throw new BadRequestException('This gift was already put forward');
     }
 
     if (candidate.owner.id !== userId) {
-      throw new Error('Пользователь не предлагал данный подарок');
+      throw new Error('User did not put forward such present');
     }
 
     return this.wishRepository.save({
@@ -97,11 +97,11 @@ export class WishesService {
     const candidate = await this.findOne(id);
 
     if (!candidate) {
-      throw new Error('Такой пользователь не найден');
+      throw new Error('User not found');
     }
 
     if (candidate.owner.id !== userId) {
-      throw new Error('Пользователь не предлагал данный подарок');
+      throw new Error('User did not put forward such present');
     }
 
     await this.wishRepository.delete({ id });
@@ -113,12 +113,12 @@ export class WishesService {
     const originalWish = await this.wishRepository.findOneBy({ id: wishId });
 
     if (!originalWish) {
-      throw new Error('Данный подарок уже существует');
+      throw new Error('Gift already exists');
     }
     const user = await this.userRepository.findOneBy({ id: userId });
 
     if (!user) {
-      throw new Error('Такой пользователь не найден');
+      throw new Error('User not found');
     }
 
     const wishData: CreateWishDto = {

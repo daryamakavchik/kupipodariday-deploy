@@ -55,7 +55,7 @@ export const SignIn = ({ extraClass = "" }) => {
       <h2
         className={`text text_type_h2 text_color_primary mb-16 ${styles.title}`}
       >
-        Вход
+        Sign in
       </h2>
       <form className={styles.form} onSubmit={authorizeUser}>
         <Input

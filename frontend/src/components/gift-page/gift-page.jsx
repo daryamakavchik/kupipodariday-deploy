@@ -88,12 +88,12 @@ export const GiftPage = ({ extraClass = "" }) => {
       <div className={styles.data_box}>
         <img className={styles.img} src={wishData.image} alt="Gift." />
         <div className={styles.gift_data}>
-          <h2 className="text text_type_h1 mb-16">{`${wishData.price} руб.`}</h2>
+          <h2 className="text text_type_h1 mb-16">{`${wishData.price} RUB.`}</h2>
 
           <p className="text text_type_main" style={{ maxWidth: "75%" }}>
             {`Added ${new Date(
               wishData.createdAt
-            ).toLocaleDateString()} by user`}
+            ).toLocaleDateString()} by `}
             <NavLink
               to={`/users/${wishData?.owner?.username}`}
               className={`text text_type_main text_color_primary ${styles.link}`}
@@ -139,7 +139,7 @@ export const GiftPage = ({ extraClass = "" }) => {
       </div>
       <div className={styles.supported_box}>
         <div className={styles.subtitle_box}>
-          <h2 className="text text_ty-e_h2">List of supporters</h2>
+          <h2 className="text text_ty-e_h2">Supported by</h2>
         </div>
         {wishData?.offers?.length ? (
           wishData?.offers?.map(({ name, amount, createdAt }) => (
