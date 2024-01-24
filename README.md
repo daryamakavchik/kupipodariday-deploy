@@ -20,6 +20,10 @@ Main page
 <img width="1356" alt="Screenshot 2024-01-23 at 9 19 24 PM" src="https://github.com/daryamakavchik/kupipodariday-deploy/assets/90967822/ba1afad9-64ec-4137-93fa-560bce4d3cf5">
 
 
+Add gift form
+<img width="1350" alt="Screenshot 2024-01-23 at 9 22 22 PM" src="https://github.com/daryamakavchik/kupipodariday-deploy/assets/90967822/9b62ada6-2ecb-4884-b774-bc2d9fafa334">
+
+
 Wishlist page
 <img width="1356" alt="Screenshot 2024-01-23 at 9 19 31 PM" src="https://github.com/daryamakavchik/kupipodariday-deploy/assets/90967822/dac9f057-9626-4367-8d1a-ebadb602623c">
 
