@@ -8,7 +8,27 @@
 ## Description 
 "KupiPodariDay Deploy" is a portfolio project created as an assignment for [Yandex.Practicum](https://practicum.yandex.com/web/ "Web Development Program"). It is a wishlist service, where registered users can pick a kind of gift they would like to receive, as well as chip in for others, indicating the amount they're willing to spend.
 
-[Frontend part provided by Yandex](https://github.com/daryamakavchik/mesto-project-pair)
+Sign up page (1)
+<img width="1356" alt="Screenshot 2024-01-23 at 9 17 10 PM" src="https://github.com/daryamakavchik/kupipodariday-deploy/assets/90967822/1244a7c8-e82a-4a07-854e-b3619a25604f">
+
+
+Sign up page (2)
+<img width="1356" alt="Screenshot 2024-01-23 at 9 17 29 PM" src="https://github.com/daryamakavchik/kupipodariday-deploy/assets/90967822/58cc54dc-39af-4ebe-8f96-bda3fe3a48c0">
+
+
+Main page
+<img width="1356" alt="Screenshot 2024-01-23 at 9 19 24 PM" src="https://github.com/daryamakavchik/kupipodariday-deploy/assets/90967822/ba1afad9-64ec-4137-93fa-560bce4d3cf5">
+
+
+Wishlist page
+<img width="1356" alt="Screenshot 2024-01-23 at 9 19 31 PM" src="https://github.com/daryamakavchik/kupipodariday-deploy/assets/90967822/dac9f057-9626-4367-8d1a-ebadb602623c">
+
+
+Profile page
+<img width="1356" alt="Screenshot 2024-01-23 at 9 19 41 PM" src="https://github.com/daryamakavchik/kupipodariday-deploy/assets/90967822/36784cb5-7436-468d-bc06-316337bf5980">
+
+
+[Frontend part provided by Yandex](https://github.com/yandex-praktikum/kupipodariday-frontend)
 </br>
 [Backend part](https://github.com/daryamakavchik/kupipodariday-backend)
 
